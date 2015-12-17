@@ -58,7 +58,6 @@ def spritz(wpm, text):
         print_word(word, orp_config)
 
 def main():
-    system('clear')
     wpm = int(sys.argv[1])
     text = ""
     for line in fileinput.input(sys.argv[2:]):
