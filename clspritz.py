@@ -40,7 +40,7 @@ def clean_articles(text):
     for char in remove:
         text = text.replace(char, " <PAUSE> ")
     text = text.strip()
-    text = text.replace("\n", " <PAUSE> <PAUSE> ")
+    #text = text.replace("\n", " <PAUSE> <PAUSE> ")
     return text.split()
 
 def spritz(wpm, text):
